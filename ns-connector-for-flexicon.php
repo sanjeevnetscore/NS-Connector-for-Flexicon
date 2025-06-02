@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: NS Connector for Flexicon
+ * Plugin Name: NS Connector for Flexicon by NetScore
  * Description: This plugin integrates Flexicon with WooCommerce.
  * Version: 1.0.0
  * Author: NetScore
