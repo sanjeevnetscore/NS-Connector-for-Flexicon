@@ -1,1 +1,1 @@
-# NS-Connector-for-Flexicon
+# NS-Connector-for-Flexicon-by-NetScore
