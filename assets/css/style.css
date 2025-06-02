@@ -1,0 +1,70 @@
+body.custom-login-page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.custom-login-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.custom-login-image {
+    flex: 1;
+    background: url('<?php echo plugin_dir_url(__FILE__); ?>assets/images/image1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.custom-login-form {
+    flex: 1;
+    padding: 30px;
+}
+
+.custom-login-form p {
+    margin-bottom: 15px;
+}
+
+.custom-login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.custom-login-form input,
+.custom-login-form textarea,
+.custom-login-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.custom-login-form textarea {
+    resize: vertical;
+}
+
+.custom-login-form button {
+    background-color: #0073aa;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-login-form button:hover {
+    background-color: #005880;
+}
