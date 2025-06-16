@@ -1,14 +1,14 @@
 <?php
 
 // Handle form submission
-function custom_login_form_handler() {
+function netscore_flexicon_connector_woocommerce_login_form_handler() {
     $confirmation_message = '';
 
     // Handle form submission
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['custom_login_form_submit'])) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nfcw_login_form_submit'])) {
         
         // Check nonce for security
-        if (!isset($_POST['custom_login_nonce']) || !wp_verify_nonce($_POST['custom_login_nonce'], 'custom_login_nonce_action')) {
+        if (!isset($_POST['nfcw_login_nonce']) || !wp_verify_nonce($_POST['nfcw_login_nonce'], 'nfcw_login_nonce_action')) {
             $confirmation_message = '<p style="color: red;">Security check failed. Please try again.</p>';
         } else {
             // Sanitize and validate form inputs
@@ -48,7 +48,7 @@ function custom_login_form_handler() {
     echo $confirmation_message;
     ?>
     <form method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-        <?php wp_nonce_field('custom_login_nonce_action', 'custom_login_nonce'); ?>
+        <?php wp_nonce_field('nfcw_login_nonce_action', 'nfcw_login_nonce'); ?>
         <p>
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -66,7 +66,7 @@ function custom_login_form_handler() {
             <textarea id="message" name="message" rows="5" required></textarea>
         </p>
         <p>
-            <button type="submit" name="custom_login_form_submit">Submit</button>
+            <button type="submit" name="nfcw_login_form_submit">Submit</button>
         </p>
     </form>
     <?php
