@@ -1,1 +1,1 @@
-# NS-Connector-for-Flexicon-by-NetScore
+# netscore-flexicon-connector-for-woocommerce
