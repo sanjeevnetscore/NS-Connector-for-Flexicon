@@ -3,7 +3,7 @@
  * Plugin Name: NetScore Flexicon Connector for WooCommerce 
  * Description: This plugin integrates Flexicon with WooCommerce, enabling seamless synchronization between your WooCommerce store and the Flexicon system. It allows for automated data exchange such as product information, inventory levels, order details, and customer data. With this plugin, businesses can streamline operations, reduce manual entry, and ensure data consistency between Flexicon and WooCommerce.
  * Version: 1.0.1
- * Author: NetScore
+ * Author: NetScoretechnologies
  * License: GPLv3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
